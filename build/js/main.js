@@ -36,7 +36,7 @@ $(document).ready(function () {
   var mySwiper1 = new Swiper('.js-swiper1', {
     direction: 'horizontal',
     slidesPerView: 5,
-    spaceBetween: 0,
+    spaceBetween: 10,
     loop: true,
 
     navigation: {
@@ -47,19 +47,19 @@ $(document).ready(function () {
     breakpoints: {
       1024: {
         slidesPerView: 5,
-        spaceBetween: 0,
+        spaceBetween: 10,
       },
       768: {
         slidesPerView: 4,
-        spaceBetween: 0,
+        spaceBetween: 10,
       },
       640: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 10,
       },
       320: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 10,
       }
     }
   });

@@ -14,17 +14,17 @@
   <link rel="preload" href="fonts/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="anonymous">
   
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/ico/favicon-16x16.png">
-  <link rel="manifest" href="/img/ico/site.webmanifest">
-  <link rel="mask-icon" href="/img/ico/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+  <link rel="manifest" href="img/ico/site.webmanifest">
+  <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/module/picturefill.min.js"></script>
-  <script src="js/module/svg4everybody.min.js"></script>
+  <script src="js/module/svgxuse.min.js"></script>
 </head>
 
 <body>
@@ -70,6 +70,7 @@
       
     </nav>
     <section class="info container">
+      <h2 class="visually-hidden">Информация</h2>
       <div class="info__logo">
         <a href="/"><img class="info__img" src="img/logo-header.png" alt="Логотип"></a>
       </div>
@@ -142,6 +143,7 @@
       </ul>
 
       <section class="content">
+        <h2 class="visually-hidden">Контент</h2>
         <h1 class="h1 content__h1">H1. Заголовок должен быть длинным, чтобы был верно выстроен интерлиньяж</h1>
         <h2 class="h2 content__h2">H2. Многострочный заголовок, длина которого иногда бывает так не кстати.</h2>
         <h3 class="h3 content__h3">H3. В течение месяца после консультативного приема и лечения,<br> контрольный осмотр - бесплатно (однократно)</h3>
@@ -158,6 +160,7 @@
         </div>
       </section>
       <section class="hero">
+        <h2 class="visually-hidden">Важная информация</h2>
         <picture class="hero-image">
           <source type="image/webp" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
           <img src="img/hero@1x.jpg" srcset="img/hero@2x.jpg 2x" loading="lazy" alt="Фото клиники">
@@ -171,6 +174,7 @@
     </div>
     
     <section class="gallery">
+      <h2 class="visually-hidden">Фотогалерея в тексте</h2>
       <div class="container">
         <p class="gallery__text">Фотогалерея в тексте</p>
       </div>
@@ -178,15 +182,17 @@
       <div class="swiper-container js-swiper1">
         <div class="swiper-wrapper">
           <div class="swiper-slide gallery__slide">
-            
+            <div>
               <a data-fancybox="gallery" href="img/photo1@2x.jpg">
+                
                 <picture>
                   <source type="image/webp" srcset="img/photo1@1x.webp 1x, img/photo1@2x.webp 2x">
                   <img src="img/photo1@1x.jpg" srcset="img/photo1@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
-                  <span></span>
+                  
                 </picture>
+                
               </a>
-
+            </div>
           </div>
           <div class="swiper-slide gallery__slide">
             <a data-fancybox="gallery" href="img/photo2@2x.jpg">
@@ -275,6 +281,7 @@
     </section>
     
     <section class="list-section container">
+      <h2 class="visually-hidden">Виды листов</h2>
  
       <div class="list-section__wrapper">
         <div class="list-block list-block--margin">
@@ -294,8 +301,9 @@
             <li class="list-block__item">Лазерная коррекция зрения</li>
           </ul>  
         </div>
+      </div>
 
-    </div></section>
+    </section>
 
     <div class="container">
       <div class="footnote">
@@ -306,6 +314,7 @@
    
     <div class="container">
       <section class="card-sm-section">
+        <h2 class="visually-hidden">Карточки</h2>
         <div class="card-sm">
           <div class="card-sm__picture">
             <picture class="card-sm__img">
@@ -343,6 +352,7 @@
     </div>   
 
     <section class="elements container">
+      <h2 class="visually-hidden">Элементы</h2>
       <div class="elements__left">
         <div class="elements__cards">
           <div class="card-lg card-lg--margin">
@@ -470,6 +480,7 @@
         </aside>
 
         <section class="doc-section">
+          <h2 class="visually-hidden">Документы</h2>
           <div class="doc">
             <svg class="doc__icon" width="51" height="68" viewBox="0 0 51 68">
               <use xlink:href="img/sprite.svg#sprite-doc"></use>
@@ -487,6 +498,7 @@
         </section>
 
         <section class="slider"> 
+          <h2 class="visually-hidden">Слайдер</h2>
           <div class="swiper-container slider__container js-swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -656,7 +668,7 @@
 
           <form class="search">
             <input class="search__input" type="search" placeholder="Поиск" name="search" required="">
-            <button class="search__button" type="sumbit">
+            <button class="search__button" type="submit">
               <svg width="23" height="23" viewBox="0 0 23 23">
                 <use xlink:href="img/sprite.svg#sprite-zoom-footer"></use>
               </svg>

@@ -9,83 +9,54 @@
     font-weight: 700;
   }
 
-  // &__overlay {
-  //   position: absolute;
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 4px;
-  //   left: 0;
-  //   background-color: $primary-color;
-  //   z-index: 100;
-  // }
 
   &__slide {
+   //pointer-events: none;
     
-   //  & picture {
-   //    position: relative;
-   //    border: 2px solid red;
-   //  }
+    & a {
+      position: relative;
+      display: inline-block;
+      //z-index: -10;
+    }
 
-   //  & span {
-   //    display: block;
-   //    border: 2px solid blue;
-   //    content: '';
-   //    position: absolute;
-   //    top: 0;
-   //   // right: 0;
-   //    //bottom: 4px;
-   //    left: 0;
-   //    height: 100%;
-   //  }
-   // // cursor: pointer;
-    // & span {
-    //   position: relative;
-    //   z-index: -100;
-    // }
+    & a::before {
+      display: inline-block;
+      z-index: 100;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -15px;
+      bottom: 3px;
+      left: 0;
+      background-color: $primary-color;
+      opacity: 0;
+      transition: all 0.7s;
+      margin-right: 15px;
+      background-image: url('../img/zoom.png');
+      background-position: center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      transition: all 0.7s;
+      pointer-events: none;
+    }
 
+    & a::after {
+      opacity: 1;
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      border: 2px solid #fff; 
+      pointer-events: none; 
+      transition: all 0.7s;
+    }
 
-    // & span::after {
-    //   border: 2px solid red;
-    //   display: inline-block;
-    //   z-index: 100;
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   bottom: 4px;
-    //   left: 0;
-    //   background-color: $primary-color;
-    //   opacity: 1;
-    //   transition: all 0.7s;
-    //   margin-right: 15px;
-    //   background-image: url('../img/zoom.png');
-    //   background-position: center;
-    //   background-size: auto;
-    //   background-repeat: no-repeat;
-    //   transition: all 0.7s;
-    //   pointer-events: none;
-    // }
-
-  //   & picture::before {
-  //     opacity: 0;
-  //     content: '';
-  //     position: absolute;
-  //     top: 20px;
-  //     right: 40px;
-  //     bottom: 20px;
-  //     left: 20px;
-  //     border: 2px solid #fff; 
-  //     pointer-events: none; 
-  //   }
-
-  //   & picture:hover::after, & picture:hover::before {
-  //     opacity: 0.6;
-  //   }   
-  }
-  
-  
+    &:hover a::before, &:hover a::after  {
+      opacity: 0.6;
+    } 
+  }  
 }
 
 @media (max-width: 767px) {
