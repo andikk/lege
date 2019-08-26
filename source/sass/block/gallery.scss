@@ -23,23 +23,23 @@
 
   &__slide {
     
-    & picture {
-      position: relative;
-      border: 2px solid red;
-    }
+   //  & picture {
+   //    position: relative;
+   //    border: 2px solid red;
+   //  }
 
-    & span {
-      display: block;
-      border: 2px solid blue;
-      content: '';
-      position: absolute;
-      top: 0;
-     // right: 0;
-      //bottom: 4px;
-      left: 0;
-      height: 100%;
-    }
-   // cursor: pointer;
+   //  & span {
+   //    display: block;
+   //    border: 2px solid blue;
+   //    content: '';
+   //    position: absolute;
+   //    top: 0;
+   //   // right: 0;
+   //    //bottom: 4px;
+   //    left: 0;
+   //    height: 100%;
+   //  }
+   // // cursor: pointer;
     // & span {
     //   position: relative;
     //   z-index: -100;
