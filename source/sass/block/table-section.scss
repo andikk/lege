@@ -1,0 +1,19 @@
+.table-section {
+  margin-bottom: 65px;
+  &__title {
+    font-family: $font-gotham;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $title-color;
+    padding-left: 16px;
+  }
+
+  &__comment {
+    font-family: $font-gotham;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400px;
+    margin-top: 0;
+  }
+}

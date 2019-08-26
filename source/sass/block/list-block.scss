@@ -1,0 +1,54 @@
+.list-block {
+  &__title {
+    font-family: $font-gotham;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $title-color;
+    margin-bottom: 8px;
+  }
+
+  &__item {
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  &__list {
+    @include list-unstyled;
+    margin-bottom: 20px;
+  }
+
+  &__list--numbered {
+    list-style-type: none; 
+    counter-reset: num;
+
+    & .list-block__item::before {
+      font-family: $font-open;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 800;
+      content: counter(num) '. '; 
+      counter-increment: num; 
+      color: $secondary-color;
+    }
+  }
+
+  &__list--marked {
+    list-style-image: url('../img/bullet.png');
+    padding-left: 20px;
+  }
+
+  &--margin {
+    margin-right: 155px;
+  }
+}
+
+@media (max-width: 767px) {
+  .list-block {
+    &--margin {
+      margin-right: 0px;
+    }   
+  }  
+}

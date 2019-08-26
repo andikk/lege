@@ -1,0 +1,30 @@
+.quote {
+  background-image: url('../img/cite.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  background-position-y: 20px;
+  border: 1px solid $quote-border-color;
+  min-height: 150px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 70px;
+  padding-right: 40px;
+  padding-top: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  &__text {
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+  }
+
+  &__author {
+    font-family: $font-open;
+    font-size: 15px;
+    line-height: 24px;
+    font-style: normal;
+  }
+}

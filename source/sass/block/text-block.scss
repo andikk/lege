@@ -1,0 +1,38 @@
+.text-block {
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid $box-border-color;
+  margin-left: auto;
+  width: 74%;
+  margin-top: 4px;
+  margin-bottom: 50px;
+
+  &__title {
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-family: $font-open;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .text-block {
+    width: 48%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-block {
+    width: 100%;
+  }  
+}

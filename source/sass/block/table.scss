@@ -1,0 +1,43 @@
+.table {
+  border-collapse: collapse;
+  font-family: $font-open;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 99%;
+
+  &__tr {
+    &--head {
+      background-color: $table-header-color;  
+    }
+
+    &--bordered {
+      border-bottom: 1px solid $table-header-color;
+    }
+  }
+
+  &__td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &--padding {
+      padding-left: 30px;
+    }
+
+    &--bold {
+      font-family: $font-gotham;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 700;   
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .table {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

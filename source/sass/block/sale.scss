@@ -1,0 +1,78 @@
+.sale {
+  background-color: $secondary-color;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin-top: -50px;
+  
+  &__title {
+    position: relative;
+    font-family: $font-gotham;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 15px;
+      right: 10px;
+      width: 59px;
+      height: 33px;
+      background-image: url('../img/sale.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }  
+  }
+
+  &__info {
+    font-family: $font-gotham;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .sale {
+    padding-left: 6px;
+    padding-right: 6px;
+    &__title {
+      font-size: 16px;
+      text-align: center;
+      padding-left: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__info {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sale {
+    margin-bottom: 30px;
+  }  
+}

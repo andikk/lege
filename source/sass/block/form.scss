@@ -1,0 +1,24 @@
+.form {
+  &__element {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-family: $font_open;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: $text-color;
+
+    &::placeholder {
+      font-family: $font_open;
+      font-size: 16px;
+      line-height: 18px;
+      color: #666666;   
+    }
+  }
+}

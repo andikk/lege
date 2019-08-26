@@ -1,0 +1,20 @@
+.footnote {
+  position: relative;
+  margin-bottom: 86px;
+  
+  &::before {
+    position: absolute;
+    top: -15px;
+    content: '';
+    width: 57%;
+    height: 3px;
+    background-color: $secondary-color;
+  }
+
+  &__text {
+    font-family: $font-open;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}

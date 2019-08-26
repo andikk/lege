@@ -1,0 +1,26 @@
+.list-section {
+  margin-bottom: 40px;
+  &__wrapper {
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .list-section {
+    &__wrapper {
+      width: 100%;
+    }
+  }  
+}  
+
+
+@media (max-width: 767px) {
+  .list-section {
+    &__wrapper {
+      width: 100%;
+      flex-direction: column;
+    }
+  }  
+}

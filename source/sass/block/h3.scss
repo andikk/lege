@@ -1,0 +1,16 @@
+.h3 {
+  font-family: $font-gotham;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $title-color;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

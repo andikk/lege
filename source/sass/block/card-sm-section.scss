@@ -1,0 +1,12 @@
+.card-sm-section {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .card-sm-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

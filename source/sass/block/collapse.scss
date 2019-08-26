@@ -1,0 +1,88 @@
+.collapse {
+
+  margin-bottom: 28px;
+
+  &__title {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    background-color: $secondary-color;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+    
+  &__button {
+    position: relative;
+    font-family: $font-gotham;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400; 
+    border: none;
+    background: transparent;
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
+    color: #fff;   
+    
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";    
+      right: -35px;
+      border: 10px solid transparent;
+      border-top: 10px solid #fff;
+      top: 10px; 
+    }
+  }
+
+  &__text {
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 16px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &--opened {
+    & .collapse__title {
+      background-color: $element-color;
+    }
+
+    & .collapse__text {
+      opacity: 1;
+      max-height: 1000px;
+    }
+
+    & .collapse__button {
+      color: $text-color;
+      &::after {
+        top: 0;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $text-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .collapse {
+    &__button {
+      font-size: 14px;
+      line-height: 18px;
+      
+      &::after {
+        top: 4px;
+      }    
+    }
+    
+    &--opened .collapse__button::after {
+      top: -4px;
+    }  
+  }
+}

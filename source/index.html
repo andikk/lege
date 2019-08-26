@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Леге Артис</title>
+  <link rel="preload" href="fonts/OpenSans/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans/OpenSans-RegularItalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans/OpenSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro/GothamPro.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro/GothamPro-Black.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro/GothamPro-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="anonymous">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/ico/favicon-16x16.png">
+  <link rel="manifest" href="/img/ico/site.webmanifest">
+  <link rel="mask-icon" href="/img/ico/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/module/picturefill.min.js"></script>
+  <script src="js/module/svg4everybody.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <button class="header__menu-btn js-menu-btn">
+      <span class="header__menu-btn-bar1"></span>
+      <span class="header__menu-btn-bar2"></span>
+      <span class="header__menu-btn-bar3"></span>
+    </button>
+    <nav class="top-nav js-top-nav">
+      <div class="container">
+        <div class="top-nav__wrapper">
+
+          <p class="top-nav__text">Офтальмологический комплекс в Ростове-на-Дону</p>
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">О комплексе</a>          
+            </li>
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Пациентам</a>          
+            </li>
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Медиацентр</a>          
+            </li>
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Отзывы</a>          
+            </li>
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Вопрос-ответ</a>          
+            </li>
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Специалистам</a>          
+            </li>
+          </ul>
+          <a href="#" class="top-nav__impaired">Версия для слабовидящих</a>
+          <button class="top-nav__search">
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <use xlink:href="img/sprite.svg#sprite-search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </nav>
+    <section class="info container">
+      <div class="info__logo">
+        <a href="/"><img class="info__img" src="img/logo-header.png" alt="Логотип"></a>
+      </div>
+
+      <div class="info__container">
+        <p class="info__timetable"><b>Мы работаем</b><br>каждый день с 9:00</p>
+        <div class="info__location">
+          <a class="info__link" href="#">
+            <svg width="11" height="15" viewBox="0 0 11 15">
+              <use xlink:href="img/sprite.svg#sprite-geo"></use>
+            </svg>
+            Адреса клиник
+          </a>
+          <button class="info__button-tour">
+            <svg width="16" height="10" viewBox="0 0 16 10">
+              <use xlink:href="img/sprite.svg#sprite-3d"></use>
+            </svg>
+            3D-ТУР
+          </button>
+        </div>
+        <div class="info__tel">
+          <p class="info__number">8 (863) 333-02-14</p>
+          <p class="info__number">8 (804) 333-02-14</p>     
+        </div>
+        <button class="button button--appointment">
+          <svg width="22" height="22" viewBox="0 0 22 22">
+              <use xlink:href="img/sprite.svg#sprite-pen"></use>
+          </svg>
+          Записаться <br>на прием
+        </button>
+      </div>
+      
+    </section>
+    <nav class="main-nav js-main-nav">
+      <div class="container container--no-padding">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Диагностика</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Лечение зрения</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Детское зрение</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Врачи</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Акции и скидки</a>
+          </li>
+        </ul>  
+      </div>
+      
+    </nav>
+  </header>
+ 
+  <main>
+    <div class="container">
+      <ul class="bread-crumbs">
+        <li class="bread-crumbs__item">
+          <a class="bread-crumbs__link" href="#">Главная</a>
+        </li>
+        <li class="bread-crumbs__item">
+          Хлебные крошки
+        </li>
+      </ul>
+
+      <section class="content">
+        <h1 class="h1 content__h1">H1. Заголовок должен быть длинным, чтобы был верно выстроен интерлиньяж</h1>
+        <h2 class="h2 content__h2">H2. Многострочный заголовок, длина которого иногда бывает так не кстати.</h2>
+        <h3 class="h3 content__h3">H3. В течение месяца после консультативного приема и лечения,<br> контрольный осмотр - бесплатно (однократно)</h3>
+        <p class="lead content__lead">Лид. Первый абзац текста/статьи, информативный отрывок, позволяющий  захватить внимание читателя на материале.</p>
+        <p class="text content__text">Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он дожжен быть максимально комфортен для чтения.</p>
+        <blockquote class="quote content__quote">
+          <p class="quote__text">Со студенческих времен осталась в памяти одна история. В древней медицине, когда лекарь выписывал рецепт, его потом просматривал аптекарь. Если все было написано правильно и могло помочь человеку, то на рецепте писали «lege artis» - «по правилам искусства».</p>
+          <p class="quote__author">— Константин Константинопольский</p>   
+        </blockquote>
+        <p class="text content__another-text">Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он дожжен быть максимально комфортен для чтения.</p>
+        <div class="important content__important">
+          <p class="important__label">Важно</p>
+          <p class="important__text">Прием ведется по предварительной записи. Также вы можете оставить заявку на сайте, администраторы клиники оперативно свяжутся с вами.</p>
+        </div>
+      </section>
+      <section class="hero">
+        <picture class="hero-image">
+          <source type="image/webp" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
+          <img src="img/hero@1x.jpg" srcset="img/hero@2x.jpg 2x" loading="lazy" alt="Фото клиники">
+        </picture>
+      
+        <div class="hero__text-block">
+          <p class="hero__text">Этой известной латинской фразой руководствуются сотрудники комплекса в своей работе. С первых дней основания офтальмологический комплекс «Леге Артис» стремится предоставлять пациентам только самое лучшее из того, чем на данный момент располагает современная офтальмология.</p>
+          <p class="hero__text">Мы проводим обследования, офтальмохирургические и лазерные операции по европейским стандартам, сохраняя умеренный уровень цен.</p>  
+        </div>
+      </section>
+    </div>
+    
+    <section class="gallery">
+      <div class="container">
+        <p class="gallery__text">Фотогалерея в тексте</p>
+      </div>
+        
+      <div class="swiper-container js-swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo1@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo1@1x.webp 1x, img/photo1@2x.webp 2x">
+                <img src="img/photo1@1x.jpg" srcset="img/photo1@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo2@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo2@1x.webp 1x, img/photo2@2x.webp 2x">
+                <img src="img/photo2@1x.jpg" srcset="img/photo2@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo3@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo3@1x.webp 1x, img/photo3@2x.webp 2x">
+                <img src="img/photo3@1x.jpg" srcset="img/photo3@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo4@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo4@1x.webp 1x, img/photo4@2x.webp 2x">
+                <img src="img/photo4@1x.jpg" srcset="img/photo4@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo1@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo1@1x.webp 1x, img/photo1@2x.webp 2x">
+                <img src="img/photo1@1x.jpg" srcset="img/photo1@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo2@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo2@1x.webp 1x, img/photo2@2x.webp 2x">
+                <img src="img/photo2@1x.jpg" srcset="img/photo2@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo1@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo1@1x.webp 1x, img/photo1@2x.webp 2x">
+                <img src="img/photo1@1x.jpg" srcset="img/photo1@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>
+          <div class="swiper-slide gallery__slide">
+            <a data-fancybox="gallery" href="img/photo2@2x.jpg">
+              <picture>
+                <source type="image/webp" srcset="img/photo2@1x.webp 1x, img/photo2@2x.webp 2x">
+                <img src="img/photo2@1x.jpg" srcset="img/photo2@2x.jpg 2x" loading="lazy" alt="Фото клиники 1">
+              </picture>
+            </a>
+          </div>       
+        </div>
+        <div class="swiper-button-prev swiper-button-white js-swiper-button-prev1"></div>
+        <div class="swiper-button-next swiper-button-white js-swiper-button-next1"></div>
+      </div>   
+    </section>
+    
+    <section class="list-section container">
+ 
+      <div class="list-section__wrapper">
+        <div class="list-block list-block--margin">
+          <p class="list-block__title">Нумерованный список</p>
+          <ol class="list-block__list list-block__list--numbered">
+            <li class="list-block__item">Хирургия катаракты</li>
+            <li class="list-block__item">Лазерная микрохирургия</li>
+            <li class="list-block__item">Лазерная коррекция зрения</li>
+          </ol>  
+        </div>
+        
+        <div class="list-block">
+          <p class="list-block__title">Маркерованый список</p>
+          <ul class="list-block__list list-block__list--marked">
+            <li class="list-block__item">Хирургия катаракты</li>
+            <li class="list-block__item">Лазерная микрохирургия</li>
+            <li class="list-block__item">Лазерная коррекция зрения</li>
+          </ul>  
+        </div>
+
+    </section>
+
+    <div class="container">
+      <div class="footnote">
+        <p class="footnote__text">Шрифт меньшего размера, для создания сноски или описания чего-то вверху.
+        </p>
+      </div>
+    </div>
+   
+    <div class="container">
+      <section class="card-sm-section">
+        <div class="card-sm">
+          <div class="card-sm__picture">
+            <picture class="card-sm__img">
+              <source type="image/webp" srcset="img/sm-card1@1x.webp 1x, img/sm-card1@2x.webp 2x">
+              <img src="img/sm-card1@1x.jpg" srcset="img/sm-card1@2x.jpg 2x" loading="lazy" alt="Фото клиники">
+            </picture>
+          </div>
+          <p class="card-sm__title">Клиника на Обсерваторной</p>
+          <p class="card-sm__text">Комментарии. Элемент «Комментарий» (класс comment) применяется к пояснительному тексту.</p>
+        </div>
+
+        <div class="card-sm">
+          <div class="card-sm__picture">
+            <picture class="card-sm__img">
+              <source type="image/webp" srcset="img/sm-card2@1x.webp 1x, img/sm-card2@2x.webp 2x">
+              <img src="img/sm-card2@1x.jpg" srcset="img/sm-card2@2x.jpg 2x" loading="lazy" alt="Фото клиники">
+            </picture>
+          </div>
+          <p class="card-sm__title">Мероприятие. День Рождения «Леге Артис»</p>
+          <p class="card-sm__text">Комментарии. Элемент «Комментарий» (класс comment) применяется к пояснительному тексту.</p>
+        </div>
+
+        <div class="card-sm">
+          <div class="card-sm__picture">
+            <picture class="card-sm__img">
+              <source type="image/webp" srcset="img/sm-card3@1x.webp 1x, img/sm-card3@2x.webp 2x">
+              <img src="img/sm-card3@1x.jpg" srcset="img/sm-card3@2x.jpg 2x" loading="lazy" alt="Фото клиники">
+            </picture>
+          </div>
+          <p class="card-sm__title">«Леге Оптика»</p>
+          <p class="card-sm__text">Комментарии. Элемент «Комментарий» (класс comment) применяется к пояснительному тексту.</p>
+        </div>
+          
+      </section>      
+    </div>   
+
+    <section class="elements container">
+      <div class="elements__left">
+        <div class="elements__cards">
+          <div class="card-lg card-lg--margin">
+            <picture class="card-sm__img">
+              <source type="image/webp" srcset="img/lg-card1@1x.webp 1x, img/lg-card1@2x.webp 2x">
+              <img src="img/lg-card1@1x.jpg" srcset="img/lg-card1@2x.jpg 2x" loading="lazy" alt="День Рождения «Леге Артис»">
+            </picture>
+            <p class="card-lg__title">Мероприятие. День Рождения «Леге Артис»</p>
+            <a class="card-lg__link">10 фото</a>
+          </div>
+          <div class="card-lg">
+            <picture class="card-sm__img">
+              <source type="image/webp" srcset="img/lg-card2@1x.webp 1x, img/lg-card2@2x.webp 2x">
+              <img src="img/lg-card2@1x.jpg" srcset="img/lg-card2@2x.jpg 2x" loading="lazy" alt="Леге Оптика">
+            </picture>
+            <p class="card-lg__title">«Леге Оптика»</p>
+            <a class="card-lg__link">15 фото</a>
+          </div>  
+        </div>
+  
+        <div class="table-section">
+          <h3 class="table-section__title">H3. Заголовок таблицы</h3>
+          <table class="table">
+            <tr class="table__tr table__tr--head">
+              <td class="table__td">Услуга</td>
+              <td class="table__td">Цена</td>
+              <td class="table__td">Цена по карте</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Консультативный прием врача кандидата медицинских наук</td>
+              <td class="table__td">2000</td>
+              <td class="table__td table__td--bold">1860</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Консультативный прием врача</td>
+              <td class="table__td">Б/п</td>
+            </tr>
+            <tr class="table__tr table__tr--bordered">
+              <td class="table__td">Консультативный прием детей в возрасте до 5-ти лет</td>
+              <td class="table__td">Б/п</td>
+              <td></td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Оптическая когерентная томография</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td table__td--padding">1 глаз</td>
+              <td class="table__td">1600</td>
+              <td class="table__td table__td--bold">1488</td>
+            </tr>
+            <tr class="table__tr table__tr--bordered">
+              <td class="table__td table__td--padding">2 глаза</td>
+              <td class="table__td">2000</td>
+              <td class="table__td table__td--bold">1860</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Оптическая когерентная томография после курса лечения <br>(однократно)</td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td table__td--padding">1 глаз</td>
+              <td class="table__td">1600</td>
+              <td class="table__td table__td--bold">1488</td>
+            </tr>
+            <tr class="table__tr table__tr--bordered">
+              <td class="table__td table__td--padding">2 глаза</td>
+              <td class="table__td">800</td>
+              <td class="table__td table__td--bold">700</td>
+            </tr>
+          </table>
+          <p class="table-section__comment">Комментарии к таблице (внизу небольшим шрифтом</p>
+        </div>
+        <div class="pagination elements__pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item"><button class="pagination__btn">1</button></li>
+            <li class="pagination__item"><button class="pagination__btn">2</button></li>
+            <li class="pagination__item"><button class="pagination__btn">3</button></li>
+            <li class="pagination__item pagination__item--empty">...</li>
+            <li class="pagination__item"><button class="pagination__btn">10</button></li>
+            <li class="pagination__item"><button class="pagination__btn">11</button></li>
+          </ul>
+        </div>
+        
+        <div class="elements__collapses">
+          <div class="collapse collapse--opened">
+            <h3 class="collapse__title"><button class="collapse__button js-collapse__button">Консультация и диагностика </button></h3>
+            <p class="collapse__text">Раскрывающийся контент. Элемент «Раскрывающийся» (класс foldable) используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов. Сноски. Ссылку1 на сноску и название сноски нужно заключать в элемент «Сноска» (класс  footnote). Таким образом сохраняется связь между ссылкой на сноску и самой сноской2.</p>
+          </div>
+
+          <div class="collapse">
+            <h3 class="collapse__title"><button class="collapse__button js-collapse__button">Лазерная коррекция зрения</button></h3>
+            <p class="collapse__text">Раскрывающийся контент. Элемент «Раскрывающийся» (класс foldable) используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов. Сноски. Ссылку1 на сноску и название сноски нужно заключать в элемент «Сноска» (класс  footnote). Таким образом сохраняется связь между ссылкой на сноску и самой сноской2.</p>
+          </div>
+
+          <div class="collapse">
+            <h3 class="collapse__title"><button class="collapse__button js-collapse__button">Хирургичекое вмешательство </button></h3>
+            <p class="collapse__text">Раскрывающийся контент. Элемент «Раскрывающийся» (класс foldable) используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов. Сноски. Ссылку1 на сноску и название сноски нужно заключать в элемент «Сноска» (класс  footnote). Таким образом сохраняется связь между ссылкой на сноску и самой сноской2.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="elements__right">
+        <div class="tabs elements__tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item js-active js-tab-trigger" data-tab="1">Записаться</li>
+            <li class="tabs__item js-tab-trigger" data-tab="2">Задать вопрос</li>
+          </ul>
+         
+          <div class="tabs__content js-tab-content js-active" data-tab="1">
+            <form class="form">
+              <input class="form__element" type="text" name="name" placeholder="Имя">
+              <input class="form__element" type="tel" name="tel" placeholder="Телефон">
+              <textarea class="form__element" rows="8" placeholder="Повод обращения"></textarea>
+              <button class="button button--lg" type="submit">Записаться на прием</button>        
+            </form>
+          </div>
+         
+          <div class="tabs__content js-tab-content" data-tab="2">
+            Содержимое второго блока
+          </div>      
+        </div>
+        
+        <aside class="text-block">
+          <p class="text-block__title">Боковой текстовый блок</p>
+          <p class="text-block__text">Ежедневно, с понедельника по субботу, более 20 высококвалифицированных специалистов «Леге Артис» помогают пациентам восстановить зрение и улучшить качество жизни. </p>
+        </aside>
+
+        <section class="doc-section">
+          <div class="doc">
+            <svg class="doc__icon" width="51" height="68" viewBox="0 0 51 68">
+              <use xlink:href="img/sprite.svg#sprite-doc"></use>
+            </svg>
+            <a class="doc__link" href="#">Юридическая информация для потребителей.pdf</a>
+            <p class="doc__size">113 кб</p>            
+          </div>
+          <div class="doc">
+            <svg class="doc__icon" width="51" height="68" viewBox="0 0 51 68">
+              <use xlink:href="img/sprite.svg#sprite-pdf"></use>
+            </svg>
+            <a class="doc__link" href="#">Юридическая информация для потребителей.pdf</a>
+            <p class="doc__size">113 кб</p>            
+          </div>
+        </section>
+
+        <section class="slider"> 
+          <div class="swiper-container slider__container js-swiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slide1@1x.webp 1x, img/slide1@2x.webp 2x">
+                  <img src="img/slide1@1x.jpg" srcset="img/slide1@2x.jpg 2x" loading="lazy" alt="Хирургическое лечение катаракты">
+                </picture>
+                <p class="slider__slide-text">Хирургическое лечение катаракты</p>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slide1@1x.webp 1x, img/slide1@2x.webp 2x">
+                  <img src="img/slide1@1x.jpg" srcset="img/slide1@2x.jpg 2x" loading="lazy" alt="Слайд 2">
+                </picture>
+                <p class="slider__slide-text">Слайд 2</p>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="img/slide1@1x.webp 1x, img/slide1@2x.webp 2x">
+                  <img src="img/slide1@1x.jpg" srcset="img/slide1@2x.jpg 2x" loading="lazy" alt="Слайд 2">
+                </picture>
+                <p class="slider__slide-text">Слайд 3</p>
+              </div>  
+            </div>
+            <div class="swiper-pagination slider__pagination js-swiper-pagination2"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>         
+        </section>              
+      </div>
+    </section>  
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <div class="footer__logo-block">
+            <img class="footer__logo" width="229" height="51" src="img/logo-footer.png" alt="Логотип">
+            <p class="footer__logo-text">Офтальмологический комплекс <br> в Ростове-на-Дону</p>
+          </div>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Клиники в Ростове-на-Дону</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Филиал в Новочеркасске</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Филиал в Таганроге</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Аптеки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Леге Оптика</a>
+            </li>              
+          </ul>
+          
+          <p class="footer__tel"><a href="tel:+78633330214">8 (863) 333-02-14</a></p>
+          <p class="footer__tel"><a href="tel:+78043330214">8 (804) 333-02-14</a></p>
+          <p class="footer__timetable"><b>Мы работаем</b><br>каждый день с 9:00</p>
+
+          <ul class="social">
+            <li class="social__item">
+              <a href="#">
+                <svg width="23" height="13" viewBox="0 0 23 13">
+                  <use xlink:href="img/sprite.svg#sprite-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg width="13" height="23" viewBox="0 0 13 23">
+                  <use xlink:href="img/sprite.svg#sprite-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg width="21" height="21" viewBox="0 0 21 21">
+                  <use xlink:href="img/sprite.svg#sprite-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__center">
+          <div class="footer__button-container">
+            <button class="button button--footer">
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#sprite-pen"></use>
+              </svg>
+              Записаться на прием
+            </button>  
+          </div>
+           
+          <div class="footer__info">
+
+            <div class="footer__info-block">
+              <ul class="footer__list">
+                <li class="footer__item footer__item--bold">
+                  <a class="footer__link" href="#">Диагностика</a>
+                </li>
+                <li class="footer__item footer__item--bold">
+                  <a class="footer__link" href="#">Лечение зрения</a>
+                  <ul class="footer__list footer__sub-list">
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Лазерная коррекция</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Катаракта</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Глаукома</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Лазерная микрохирургия</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Хирургия заболеваний <br>роговицы, век и конъюктивы</a>
+                    </li>               
+                  </ul>
+                </li>
+                <li class="footer__item footer__item--bold">
+                  <a class="footer__link" href="#">Врачи</a>
+                </li>
+              </ul>          
+            </div>
+
+            <div class="footer__info-block">
+              <ul class="footer__list">
+                <li class="footer__item footer__item--bold">
+                  <a class="footer__link" href="#">Детское зрение</a>
+                  <ul class="footer__list footer__sub-list">
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Близорукость</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Дальнозоркость</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Астигматизм</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Косоглазие</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Амблиопия</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Ретинопатия недоношенных</a>
+                    </li>
+                    <li class="footer__item">
+                      <a class="footer__link" href="#">Дакриоцистит новорожденных</a>
+                    </li>               
+                  </ul>
+                </li>
+                <li class="footer__item footer__item--bold">
+                  <a class="footer__link" href="#">Отзывы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <form class="search">
+            <input class="search__input" type="search" placeholder="Поиск" name="search" required>
+            <button class="search__button" type="sumbit">
+              <svg width="23" height="23" viewBox="0 0 23 23">
+                <use xlink:href="img/sprite.svg#sprite-zoom-footer"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+
+        <div class="footer__right">
+          <div class="sale">
+            <h3 class="sale__title">Акции</h3>
+            
+            <div class="sale__item">
+              <picture class="sale__img">
+                <source type="image/webp" srcset="img/actions@1x.webp 1x, img/actions@2x.webp 2x">
+                <img src="img/actions@1x.jpg" srcset="img/actions@2x.jpg 2x" loading="lazy" alt="Коррекция зрения скидки">
+              </picture>
+              <p class="sale__info">Скидка 35%</p>
+              <p class="sale__text">на лазерную коррекцию зрения. <b>Только в августе!</b></p>  
+            </div>
+            <div class="sale__item">
+              <picture class="sale__img">
+                <source type="image/webp" srcset="img/actions2@1x.webp 1x, img/actions2@2x.webp 2x">
+                <img src="img/actions2@1x.jpg" srcset="img/actions2@2x.jpg 2x" loading="lazy" alt="Коррекция зрения скидки">
+              </picture>
+              <p class="sale__info">Скидка 35%</p>
+              <p class="sale__text">на лазерную коррекцию зрения. <b>Только в августе!</b></p>  
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+      
+      <div class="copyright">
+        <p class="copyright-text">©&nbsp;2017 Леге&nbsp;Артис</p>
+        <p class="copyright-text"><a class="copyright__link" href="#">Пользовательское соглашение</a></p>
+        <p class="copyright-text"><a class="copyright__link" href="#">Политика конфиденциальности</a></p>
+        <p class="copyright-text">Разработчик сайта - <a class="copyright__link" href="https://webelement.ru/">Webelement</a></p>
+      </div> 
+      <p class="footer__warning">Имеются противопоказания. Необходима консультация специалиста.</p>
+    </div>
+  </footer>
+  
+  <script src="js/module/jquery-3.4.1.min.js"></script>
+  <script src="js/module/swiper.min.js"></script>
+  <script src="js/module/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

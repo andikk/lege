@@ -1,0 +1,40 @@
+.hero {
+  margin-bottom: 70px;
+  position: relative;
+
+  &__text {
+    font-family: $font-open;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__text-block {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    left: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgba(255, 255, 255, 0.902);
+    box-shadow: 0px 5px 20px 0px rgba(11, 14, 19, 0.08);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+  .hero {
+    &__text-block {
+      position: initial;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    &__text-block {
+      position: initial;
+    }
+  }
+}
