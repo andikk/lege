@@ -35,7 +35,7 @@ $(document).ready(function () {
   // Инициализируем слайдеры
   var mySwiper1 = new Swiper('.js-swiper1', {
     direction: 'horizontal',
-    slidesPerView: 4,
+    slidesPerView: 5,
     spaceBetween: 0,
     loop: true,
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     breakpoints: {
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 0,
       },
       768: {
